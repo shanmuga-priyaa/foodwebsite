@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crispy Chicken</title>
+<!-- Include Boxicons CSS for icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-image: url("/image/bgimg.jpg");
+    backdrop-filter: blur(5px);
+    background-repeat: no-repeat;
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 70%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 10px;
+    flex: 1; /* Take remaining vertical space */
+  }
+
+  .card {
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px white;
+    color: white;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card:nth-child(1) {
+    background-image: url("/image/card1.jpeg");
+  }
+
+  .card:nth-child(2) {
+    background-image: url("/image/card5.jpeg");
+  }
+
+  .card:nth-child(3) {
+    background-image: url("/image/card3.jpeg");
+  }
+
+  .card:nth-child(4) {
+    background-image: url("/image/card8.jpeg");
+  }
+
+  .card .content {
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+  }
+
+  .card h3 {
+    margin-top: 0;
+  }
+
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.95);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  .card:hover {
+    animation: scaleIn 0.3s forwards;
+  }
+
+  /* Footer styles */
+  footer {
+    background-color: black;
+    color: orange;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    flex-shrink: 0; /* Do not shrink footer */
+  }
+
+  footer h1 {
+    margin: 0;
+    font-size: 24px;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+
+  footer p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .icons {
+    margin-bottom: 10px;
+  }
+
+  .icons i {
+    font-size: 24px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .icons i:hover {
+    transform: rotate(10deg);
+    color: orange;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+
+  /* Navbar styles */
+  .navbar {
+    background-color: black;
+    overflow: hidden;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    padding: 5px 5px;
+    transition: all 0.3s ease; /* Transition for smooth animation */
+  }
+
+  .navbar a:hover {
+    background-color: orangered;
+    color: black;
+    border-radius: 50px; /* Oval shape */
+  }
+
+  .navbar a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-color: orangered;
+    z-index: -1; /* Behind the text */
+    transition: height 0.3s ease; /* Transition for expanding effect */
+    border-radius: 50px; /* Oval shape */
+  }
+
+  .navbar a:hover::before {
+    height: 100%; /* Expand the background on hover */
+  }
+</style>
+</head>
+<body
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="index.html">Crispy Chicken</a>
+    <a href="index.html">Signature Dish</a>
+    <a href="index.html">Special Products</a>
+    <a href="index.html">About Us</a>
+  </div>
+
+  <h3 style="text-align: center; padding-top: 30px;"><a href= "index.html"><a class="crispychicken.html"></a>CrispyChicken</a></h3>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="content">
+        <h3>Crispy Chicken</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h3>Moru Moru Chicken</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h3>Honey Chicken</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h3>Special Chicken</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="content">
+        <h3>Pepper Chicken</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h3>Kurkure Chicken</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h3>Garlic Chicken</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h3>Chicken Fry</h3>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <h1>Chick-N-Fried</h1>
+    <p>The Ultimate Comfort Food</p>
+    
+    <!-- Icons with correct class and tag -->
+    <div class="icons">
+      <i class="bx bxl-twitter"></i>
+      <i class="bx bxl-facebook"></i>
+      <i class="bx bxl-google"></i>
+      <i class="bx bxl-skype"></i>
+      <i class="bx bxl-instagram"></i>
+    </div>
+    
+    <div class="copyright">
+      &copy; Copyright <strong><span>Chick-N-Fried</span></strong> All Rights Reserved
+    </div>
+  </footer>
+
+</body>
+</html>

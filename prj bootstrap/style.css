@@ -1,0 +1,512 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* navbar top */
+.navbar-top{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    color:orange;
+}
+.social-link i img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-link i img:hover{
+    background-color:orange;
+    border-radius: 50px;
+}
+@media screen and (max-width:420px){
+    .social-link i img{
+        width: 20px;
+    }
+}
+.logo h3{
+    font-weight: bold;
+}
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+    }
+}
+.icons i img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:420px){
+    .icons i img{
+        width: 20px;
+    }
+}
+/* General Navbar Styles */
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid orangered;
+    background-color:orangered;
+}
+
+.navbar-top .social-link i {
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-top .social-link i:hover {
+    transform: translateY(-5px);
+}
+
+.navbar-top .logo h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
+
+.navbar-top .icons i {
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-top .icons i:hover {
+    transform: translateY(-5px);
+}
+
+/* Navbar Styles for main content */
+.navbar {
+    padding: 0;
+    background-color:orangered;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler span img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-toggler span img:hover {
+    transform: rotate(180deg);
+}
+
+.navbar-nav .nav-link {
+    color:orange;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color:orangered;
+    color:orangered;
+    border-radius: 50px;  /* Change to oval shape */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    background-color: orangered;
+    color: orangered;
+    border-radius: 50px;  /* Change to oval shape */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .navbar-nav {
+        background-color: orangered;
+        border-top: 1px solid orangered;
+        animation: slideIn 0.5s ease-in-out;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 20px;
+    }
+
+    .navbar-top {
+        flex-direction: column;
+    }
+
+    .navbar-top .logo {
+        margin: 10px 0;
+    }
+}
+
+/* Slide-in Animation for Navbar */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Pulse Animation for Logo Title */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        color: orangered;
+    }
+    50% {
+        transform: scale(1.1);
+        color: orangered;
+    }
+    100% {
+        transform: scale(1);
+        color:orangered;
+    }
+}
+/* General Navbar Styles */
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+    background-color: white;
+}
+
+.navbar-top .social-link i {
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-top .social-link i:hover {
+    transform: translateY(-5px);
+}
+
+.navbar-top .logo h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-top .icons i {
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-top .icons i:hover {
+    transform: translateY(-5px);
+}
+
+/* Navbar Styles for main content */
+.navbar {
+    padding: 0;
+    background-color:orangered;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler span img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-toggler span img:hover {
+    transform: rotate(180deg);
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: orangered;
+    color:white;
+    border-radius: 50px;  /* Change to oval shape */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    background-color: orangered;
+    color: white;
+    border-radius: 50px;  /* Change to oval shape */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .navbar-nav {
+        background-color: orangered;
+        border-top: 1px solid white;
+        animation: slideIn 0.5s ease-in-out;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 20px;
+    }
+
+    .navbar-top {
+        flex-direction: column;
+    }
+
+    .navbar-top .logo {
+        margin: 10px 0;
+    }
+}
+
+/* Slide-in Animation for Navbar */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* navbar top */
+
+/* main content */
+.main-content{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/image/bgimg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 70%;
+}
+
+/* navbar */
+#navbar-color{
+    background-color:black;
+}
+.navbar-nav{
+    margin: auto;
+}
+.nav-link{
+    margin-left: 30px;
+    font-weight: bold;
+    color:white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.nav-link:hover{
+    color:orangered;
+}
+/* navbar */
+
+/* content */
+ 
+.content{
+    margin-top: 150px;
+    margin-left: 60px;
+    
+} 
+
+.content h1{
+    font-size: 60px;
+    color: white;
+}
+.content p{
+    color: white;
+}
+#btn1 button{
+    width: 150px;
+    height: 32px;
+    background: transparent;
+    border: 3px solid orange;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+    color: white;
+}
+#btn1 button:hover{
+    background-color:orangered;
+    color: black;
+} 
+@media screen and (max-width:420px){
+    .content h1{
+        font-size: 30px;
+    }
+}
+/* content */
+
+/* main content */
+
+/* card1 */
+#btn2 button{
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border: 4px solid orange;
+
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn2 button:hover{
+    background-color:orangered;
+}
+.card {
+    box-shadow: 0.0 0.0 15px black;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow:0.0 0.0 15px black;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+/* card1 */
+
+/* card2 */
+#tpc{
+    box-shadow:0.0 0.0 15px black;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+#tpc:hover{
+    transform: translateY(-20px);
+}
+/* card2 */
+
+/* card3 */
+#c{
+    box-shadow:0.0 0.0 15px black;
+    transition:0.4 ease;
+    cursor:pointer;
+}
+#c:hover{
+    transition:0.4s ease;
+    transform:translate(-20px);
+}
+#c img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+#c p{
+    font-weight: bold;
+}
+#btn3{
+    text-align: center;
+}
+#btn3 button{
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 3px solid orange;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn3 button:hover{
+    background-color: orangered;
+}
+@media screen and (max-width:895px){
+    #btn3 button{
+        width: 100px;
+    }
+}
+/* card3 */
+#btn4 button{
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 4px solid orange;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn4 button:hover{
+    background-color:orangered;
+}
+/*about*/
+.card{
+    overflow:hidden;
+}
+.card img:hover{
+    transform: scale(1.1);
+    transition:0.5s;
+}
+#a{
+    box-shadow:0.0 0.0 30px black;
+    transition:0.4 ease;
+    cursor:pointer;
+}
+/* footer */
+#footer {
+    width: 100%;
+    height: 40vh;
+    margin-top: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer h1 {
+    color: orange;
+    padding-top:5px;
+    font-size: 2rem; /* Adjust font size as needed */
+    animation: textScale 1s ease-in-out infinite alternate; /* Animation for the title */
+}
+
+#footer p {
+    color: orange;
+    font-size: 1rem; /* Adjust font size as needed */
+}
+
+.icons {
+    margin-top: 10px;
+}
+
+.icons i {
+    color: orange;
+    font-size: 25px; /* Adjust icon size */
+    cursor: pointer;
+    margin: 0 10px; /* Adjust spacing between icons */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.icons i:hover {
+    transform: scale(1.3); /* Scale up the icon on hover */
+}
+
+.copyright, .credite {
+    color: orange;
+    margin-top: 20px;
+}
+
+/* Animation keyframes for textScale */
+@keyframes textScale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.2);
+    }
+}
+
+/* footer */
